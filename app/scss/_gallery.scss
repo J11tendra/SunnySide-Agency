@@ -1,0 +1,95 @@
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'milkbottle orange'
+    'cone sugarcubes'
+    ;
+
+    // For Desktop 
+    @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'milkbottle orange cone sugarcubes'
+        ;
+    }
+
+    .milkbottle {
+        background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10.125rem;
+        // width: 50%;
+        grid-area: milkbottle;
+
+        // Tablet and Desktop
+        @include breakpoint-up(medium) {
+            height: 20.375rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+            height: 27.375rem;
+        }
+    }
+
+    .orange {
+        background-image: url("/images/mobile/image-gallery-orange.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10.125rem;
+        // width: 50%;
+        grid-area: orange;
+
+        @include breakpoint-up(medium) {
+            height: 20.375rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url("/images/desktop/image-gallery-orange.jpg");
+            height: 27.375rem;
+        }
+    }
+
+    .cone {
+        background-image: url("/images/mobile/image-gallery-cone.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10.125rem;
+        // width: 50%;
+        grid-area: cone;
+
+        @include breakpoint-up(medium) {
+            height: 20.375rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 27.375rem;
+            background-image: url("/images/desktop/image-gallery-cone.jpg");
+        }
+    }
+
+    .sugarcubes {
+        background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 10.125rem;
+        // width: 50%;
+        grid-area: sugarcubes;
+
+        @include breakpoint-up(medium) {
+            height: 20.375rem;
+        }
+
+        @include breakpoint-up(large) {
+            background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+            height: 27.375rem;
+        }
+    }
+}

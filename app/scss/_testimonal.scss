@@ -1,0 +1,166 @@
+.testimonal {
+    padding: 0 0 4.5rem 0;
+
+    // Tablet and Desktop
+    @include breakpoint-up(medium) {
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    @include breakpoint-up(large) {
+        padding: 5rem;
+        padding-bottom: 8rem;
+    }
+
+    h2 {
+        font-family: 'Fraunces', serif;
+        font-size: 1.125rem;
+        font-weight: 900;
+        color: $dark-grayish-blue;
+        letter-spacing: 0.5rem;
+        margin-top: 3.25rem;
+        margin-bottom: 0;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .test-grid {
+        // Tablet and Desktop
+        @include breakpoint-up(medium) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            'Emily Thomas Jennie'
+            ;
+        }
+
+        .test-1 {
+            height: 19.125rem;
+            padding: 0 2rem;
+            padding-top: 3.125rem;
+    
+            img {
+                display: block;
+                border-radius: 5rem;
+                height: 4rem;
+                margin: 0 auto;
+                margin-bottom: 1.875rem;
+            }
+    
+            p {
+                color: $dark-grayish-blue;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 1.375rem;
+                margin: 0 0 1.875rem 0;
+            }
+    
+            h3 {
+                font-size: 1.25rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                color: $very-dark-desaturated-blue;
+                text-align: center;
+                margin: 0 0 0.375rem 0;
+            }
+    
+            span {
+                display: block;
+                font-size: 0.875rem;
+                color: $grayish-blue;
+                text-align: center;
+            }
+    
+            @include breakpoint-up(medium) {
+                grid-area: Emily;
+            }
+        }
+    
+        .test-2 {
+            height: 19.125rem;
+            padding: 0 2rem;
+            padding-top: 3.125rem;
+    
+            img {
+                display: block;
+                border-radius: 5rem;
+                height: 4rem;
+                margin: 0 auto;
+                margin-bottom: 1.875rem;
+            }
+    
+            p {
+                color: $dark-grayish-blue;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 1.375rem;
+                margin: 0 0 1.875rem 0;
+            }
+    
+            h3 {
+                font-size: 1.25rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                color: $very-dark-desaturated-blue;
+                text-align: center;
+                margin: 0 0 0.375rem 0;
+            }
+    
+            span {
+                display: block;
+                font-size: 0.875rem;
+                color: $grayish-blue;
+                text-align: center;
+            }
+    
+            @include breakpoint-up(medium) {
+                grid-area: Thomas;
+            }
+        }
+    
+        .test-3 {
+            height: 19.125rem;
+            padding: 0 2rem;
+            padding-top: 3.125rem;
+    
+            img {
+                display: block;
+                border-radius: 5rem;
+                height: 4rem;
+                margin: 0 auto;
+                margin-bottom: 1.875rem;
+            }
+    
+            p {
+                color: $dark-grayish-blue;
+                font-size: 1rem;
+                text-align: center;
+                line-height: 1.375rem;
+                margin: 0 0 1.875rem 0;
+            }
+    
+            h3 {
+                font-size: 1.25rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                color: $very-dark-desaturated-blue;
+                text-align: center;
+                margin: 0 0 0.375rem 0;
+            }
+    
+            span {
+                display: block;
+                font-size: 0.875rem;
+                color: $grayish-blue;
+                text-align: center;
+            }
+    
+            @include breakpoint-up(medium) {
+                grid-area: Jennie;
+            }
+        }
+    }
+}

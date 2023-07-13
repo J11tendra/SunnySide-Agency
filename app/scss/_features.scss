@@ -1,0 +1,259 @@
+.features {
+
+    // Tablet and Desktop
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4"
+        "item-5 item-6"
+        ;
+    }
+
+    .item-1 {
+        background-image: url("/images/mobile/image-transform.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20.375rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-2;
+            background-image: url("/images/desktop/image-transform.jpg");
+            height: 30.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 36.625rem;
+        }
+    }
+
+    .item-2 {
+        height: 23.5rem;
+        width: 100%;
+        padding: 3.5rem 1.625rem;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-1;
+            height: 30.625rem;
+            padding-left: 6rem;
+            padding-right: 4rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            text-align: left;
+        }
+
+        @include breakpoint-up(large) {
+            padding-left: 8rem;
+            padding-right: 6.875rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            height: 36.625rem;
+        }
+
+        h2 {
+            color: black;
+            font-size: 2.25rem;
+            font-family: 'Fraunces', serif;
+            margin: 0;
+            margin-bottom: 1.875rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: $dark-grayish-blue;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 0;
+            margin-bottom: 1.875rem;
+        }
+
+        a {
+            text-decoration: underline $yellow 0.25rem;
+            transition: text-decoration 200ms ease-in-out;
+
+            &:hover {
+                text-decoration: underline $soft-red 0.25rem;
+            }
+
+            .heading {
+                color: black;
+                font-size: 1.125rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .item-3 {
+        background-image: url("/images/mobile/image-stand-out.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20.375rem;
+        width: 100%;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-3;
+            background-image: url("/images/desktop/image-stand-out.jpg");
+            height: 30.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 36.625rem;
+        }
+    }
+
+    .item-4 {
+        height: 23.5rem;
+        width: 100%;
+        padding: 3.5rem 1.625rem;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-4;
+            height: 30.625rem;
+            padding-right: 6rem;
+            padding-left: 4rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            text-align: left;
+        }
+
+        @include breakpoint-up(large) {
+            padding-left: 8rem;
+            padding-right: 6.875rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            height: 36.625rem;
+        }
+
+        h2 {
+            color: black;
+            font-size: 2.25rem;
+            font-family: 'Fraunces', serif;
+            margin: 0;
+            margin-bottom: 1.875rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: $dark-grayish-blue;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 0;
+            margin-bottom: 1.875rem;
+        }
+
+        a {
+            text-decoration: underline $yellow 0.25rem;
+            transition: text-decoration 200ms ease-in-out;
+
+            &:hover {
+                text-decoration: underline $soft-red 0.25rem;
+            }
+
+            .heading {
+                color: black;
+                font-size: 1.125rem;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .item-5 {
+        background-image: url("/images/mobile/image-graphic-design.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        width: 100%;
+        height: 35.375rem;
+        padding: 0 1.625rem;
+        padding-top: 24rem;
+        padding-bottom: 3.125rem;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-5;
+            background-image: url("/images/desktop/image-graphic-design.jpg");
+            padding-top: 18rem;
+            height: 30.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 36.625rem;
+            padding-top: 22rem;
+        }
+        
+        @include breakpoint-up(x-large) {
+            padding-top: 26rem;
+        }
+
+        h2 {
+            color: $dark-desaturated-cyan;
+            font-size: 2.25rem;
+            font-family: 'Fraunces', serif;
+            margin: 0;
+            margin-bottom: 2rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: $dark-desaturated-cyan;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 0;
+        }
+    }
+
+    .item-6 {
+        background-image: url("/images/mobile/image-photography.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        width: 100%;
+        height: 35.375rem;
+        padding: 0 1.625rem;
+        padding-top: 24rem;
+        padding-bottom: 3.125rem;
+        text-align: center;
+
+        @include breakpoint-up(medium) {
+            grid-area: item-6;
+            background-image: url("/images/desktop/image-photography.jpg");
+            padding-top: 18rem;
+            height: 30.625rem;
+        }
+
+        @include breakpoint-up(large) {
+            height: 36.625rem;
+            padding-top: 22rem;
+        }
+
+        @include breakpoint-up(x-large) {
+            padding-top: 26rem;
+        }
+
+
+        h2 {
+            color: $dark-blue;
+            font-size: 2.25rem;
+            font-family: 'Fraunces', serif;
+            margin: 0;
+            margin-bottom: 2rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: $dark-blue;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 0;
+        }
+    }
+}
