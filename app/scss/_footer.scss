@@ -1,6 +1,6 @@
 footer {
     background-color: hsl(169, 62%, 74%);
-    height: 19.125rem;
+    height: 22.125rem;
     width: 100%;
     padding: 3.375rem 1.875rem;
 
@@ -11,7 +11,7 @@ footer {
 
     .logo {
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
 
         @include breakpoint-up(medium) {
             margin-bottom: 3.125rem;
